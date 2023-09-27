@@ -4,6 +4,7 @@ body {
   width: 100%;
   height: 100vh;
   font-size: 1rem;
+  font-family: "Cinzel", serif;
 }
 h1 {
   margin: 0;
@@ -14,7 +15,6 @@ h1 {
   color: #c1aa5a;
   padding: 8px;
   font-family: "Cinzel", serif;
-  
 }
 .header-geral a:hover {
   text-decoration: underline;
@@ -48,24 +48,27 @@ h1 {
 }
 .section {
   width: 100%;
-  height: 1000px;
-  background-image: url("/assets/src/img/background2.jpg");
+  height: 100%;
+  background-image: url("/assets/src/img/Design_sem_nome_6.png");
   background-size: 100%;
   background-repeat: no-repeat;
-
+  margin-top: 0;
+  position: absolute;
 }
 
 .opacity {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  color: #fdf9ea;
   width: auto;
   height: 100%;
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0, transparent); 
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0, transparent);
 }
-.slogan {
-  color: aliceblue;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 35%;
+ .slogan{
+  margin-right: 6%;
+  
 }
 .section-2 {
   display: flex;
@@ -73,9 +76,9 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  height: 800px;
-  background-color: #080808;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0, #080808);
+  height: 660px;
+  background-color: aliceblue;
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0, #080808); */
 }
 
 #a-logo {
@@ -87,12 +90,13 @@ h1 {
   width: 100%;
   height: auto;
 }
+
 /* Pagina sobre nós  */
 
-.section-sobre-nos{
+.section-sobre-nos {
   width: 100%;
   height: 100%;
-  color: #85714d;
+  color: #fdf9ea;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -100,22 +104,21 @@ h1 {
   font-family: "Cinzel", serif;
 }
 
-.section-sobre-nos h1{
+.section-sobre-nos h1 {
   margin-bottom: 50px;
   margin-top: 240px;
   display: flex;
   justify-content: center;
-  
 }
-.line-right{
+.line-right {
   width: 100%;
   display: flex;
   justify-content: end;
 }
-.descricao-integrantes-left{
+.descricao-integrantes-left {
   width: 75%;
   height: 40%;
-  background-color: #85714d;
+  background-color: #b9b094;
   background-size: 100%;
   border-radius: 0px 200px 200px 0px;
   padding: 2%;
@@ -123,54 +126,57 @@ h1 {
   color: black;
   display: flex;
   flex-direction: row;
-
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-.descricao-integrantes-right{
+.descricao-integrantes-right {
   width: 75%;
   height: 40%;
-  background-color: #85714d;
+  background-color: #fdf9ea;
   background-size: 100%;
   border-radius: 200px 0px 0px 200px;
   padding: 2%;
   margin-bottom: 50px;
   color: black;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
-.descricao-integrantes-left > img{
+.descricao-integrantes-left > img {
   width: 25%;
   height: 25%;
   border-radius: 50%;
 }
-.descricao-integrantes-right > img{
+.descricao-integrantes-right > img {
   width: 25%;
   height: 25%;
   border-radius: 50%;
 }
-.dados-integrante{
+.dados-integrante {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.dados-integrante img{
+.dados-integrante img {
   width: 40px;
   height: 40px;
 }
-.icones{
+.icones {
   width: 30%;
   display: flex;
   justify-content: space-evenly;
   margin-top: 5%;
 }
 
-#principal > img{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 346vh;
-  
-  
+#principal > img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 346vh;
+}
+
+#sobre-nos {
+  color: aliceblue;
+  text-decoration: underline;
 }
