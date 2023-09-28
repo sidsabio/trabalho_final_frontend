@@ -676,8 +676,18 @@ input:checked + .slider:before {
 }
 
 
-.header-light {  
+.header-light {
+  text-decoration: underline;
+  color: aliceblue;
   background-color: #fdf9ea;  
+}
+.header-light a:hover{
+  color: #c1aa5a;
+  text-decoration: underline;
+}
+.destaque-light {
+  color: #c1aa5a;
+  text-decoration: underline;
 }
 .footer-light{
   background-color: #fdf9ea;

@@ -58,7 +58,9 @@ function exibirReceita(numero) {
 function mudar() {
   let header = document.getElementById("header");
   let footer = document.getElementById("footer");
+  let destaque = document.getElementsByClassName("destaque");
 
   header.classList.toggle("header-light");
   footer.classList.toggle("footer-light");
+  destaque[0].classList.toggle("destaque-light");
 }
