@@ -674,3 +674,11 @@ input:checked + .slider:before {
   border: #c1aa5a 1px solid;
   color: #080808;
 }
+
+
+.header-light {  
+  background-color: #fdf9ea;  
+}
+.footer-light{
+  background-color: #fdf9ea;
+}

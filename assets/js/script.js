@@ -54,3 +54,11 @@ function exibirReceita(numero) {
     ).style.borderBottom = "1px solid #fdf9ea";
   }
 }
+
+function mudar() {
+  let header = document.getElementById("header");
+  let footer = document.getElementById("footer");
+
+  header.classList.toggle("header-light");
+  footer.classList.toggle("footer-light");
+}

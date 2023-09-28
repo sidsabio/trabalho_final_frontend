@@ -15,13 +15,19 @@
 </head>
 
 <body>
-    <header class="header-geral">
+    <header id="header">
         <h1 class="logo"><a id="a-logo" href="./index.html">Cork & Cap Co.</a></h1>
         <div>
             <a href="./products.html">Produtos</a>
             <a href="./subscribe.html">Assine</a>
             <a href="./recipes.html">Faça O Seu Drink</a>
-            <a class="destaque" href="">Sobre Nós</a>
+            <a class="destaque" href="./about.html">Sobre Nós</a>
+        </div>
+        <div class="light-mode-botao">
+            <label class="switch">
+                <input type="checkbox" checked onclick="mudar()">
+                <span class="slider round"></span>
+            </label>
         </div>
     </header>
     <div id="principal">
@@ -143,28 +149,28 @@
             <img src="./assets/src/img/up-arrow4.png" alt="">
         </span>
     </a>
-    <footer>
+    <footer id="footer">
         <div class="first-line-footer">
-            <div class="logo-footer">
-                <h4>Cork & Cap Co.</h4>
+          <div class="logo-footer">
+            <h4>Cork & Cap Co.</h4>
+          </div>
+          <div class="informacoes-footer">
+            <div class="menu">
+              <p>(21)99104-4962</p>
+              <p>corkandcap_co@gmail.com</p>
+              <p>Avenida Vieira Souto - 136 - RJ</p>
             </div>
-            <div class="informacoes-footer">
-                <div class="menu">
-                    <p>(21)99104-4962</p>
-                    <p>corkandcap_co@gmail.com</p>
-                    <p>Avenida Vieira Souto - 136 - RJ</p>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="second-line-footer">
-            <div class="icons-footer">
-                <img src="./assets/src/img/logo-facebook-bege.png" alt="">
-                <img src="./assets/src/img/logo-instagram-bege.png" alt="">
-                <img src="./assets/src/img/logo-twitter-bege.png" alt="">
-            </div>
-            <p>©Copyright | All rights reserved</p>
+          <div class="icons-footer">
+            <img src="./assets/src/img/logo-facebook-bege.png" alt="">
+            <img src="./assets/src/img/logo-instagram-bege.png" alt="">
+            <img src="./assets/src/img/logo-twitter-bege.png" alt="">
+          </div>
+          <p>©Copyright | All rights reserved</p>
         </div>
-    </footer>
+      </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 

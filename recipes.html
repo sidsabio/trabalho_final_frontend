@@ -14,15 +14,21 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <h1 class="logo"><a id="a-logo" href="./index.html">Cork & Cap Co.</a></h1>
     <div>
-      <a href="./products.html">Produtos</a>
-      <a href="./subscribe.html">Assine</a>
-      <a class="destaque" href="/recipes.html">Faça O Seu Drink</a>
-      <a href="/about.html">Sobre Nós</a>
+        <a href="./products.html">Produtos</a>
+        <a href="./subscribe.html">Assine</a>
+        <a class="destaque" href="./recipes.html">Faça O Seu Drink</a>
+        <a href="./about.html">Sobre Nós</a>
     </div>
-  </header>
+    <div class="light-mode-botao">
+        <label class="switch">
+            <input type="checkbox" checked onclick="mudar()">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</header>
   <section class="section-faca-seu-drink">
     <div class="escolher-drink">
       <input id="bloody-mary-input" type="button" value="Bloody Mary" onclick="exibirReceita(1, )">
@@ -44,7 +50,7 @@
       <img src="./assets/src/img/up-arrow4.png" alt="">
     </span>
   </a>
-  <footer>
+  <footer id="footer">
     <div class="first-line-footer">
       <div class="logo-footer">
         <h4>Cork & Cap Co.</h4>

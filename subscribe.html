@@ -18,12 +18,20 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1 class="logo"><a id="a-logo" href="./index.html">Cork & Cap Co.</a></h1>
-        <a href="./products.html">Produtos</a>
-        <a class="destaque" href="./subscribe.html">Assine</a>
-        <a href="./recipes.html">Faça O Seu Drink</a>
-        <a href="./about.html">Sobre Nós</a>
+        <div>
+            <a href="./products.html">Produtos</a>
+            <a class="destaque" href="./subscribe.html">Assine</a>
+            <a href="./recipes.html">Faça O Seu Drink</a>
+            <a href="./about.html">Sobre Nós</a>
+        </div>
+        <div class="light-mode-botao">
+            <label class="switch">
+                <input type="checkbox" checked onclick="mudar()">
+                <span class="slider round"></span>
+            </label>
+        </div>
     </header>
     <section class="assinatura">
         <div class="cards">
@@ -147,28 +155,28 @@
         </section>
         
     </section>
-    <footer>
+    <footer id="footer">
         <div class="first-line-footer">
-            <div class="logo-footer">
-                <h4>Cork & Cap Co.</h4>
+          <div class="logo-footer">
+            <h4>Cork & Cap Co.</h4>
+          </div>
+          <div class="informacoes-footer">
+            <div class="menu">
+              <p>(21)99104-4962</p>
+              <p>corkandcap_co@gmail.com</p>
+              <p>Avenida Vieira Souto - 136 - RJ</p>
             </div>
-            <div class="informacoes-footer">
-                <div class="menu">
-                    <p>(21)99104-4962</p>
-                    <p>corkandcap_co@gmail.com</p>
-                    <p>Avenida Vieira Souto - 136 - RJ</p>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="second-line-footer">
-            <div class="icons-footer">
-                <img src="./assets/src/img/logo-facebook-bege.png" alt="">
-                <img src="./assets/src/img/logo-instagram-bege.png" alt="">
-                <img src="./assets/src/img/logo-twitter-bege.png" alt="">
-            </div>
-            <p>©Copyright | All rights reserved</p>
+          <div class="icons-footer">
+            <img src="./assets/src/img/logo-facebook-bege.png" alt="">
+            <img src="./assets/src/img/logo-instagram-bege.png" alt="">
+            <img src="./assets/src/img/logo-twitter-bege.png" alt="">
+          </div>
+          <p>©Copyright | All rights reserved</p>
         </div>
-    </footer>
+      </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 
