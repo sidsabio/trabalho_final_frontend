@@ -1,4 +1,4 @@
-const carousel = new bootstrap.Carousel("#myCarousel");
+// const carousel = new bootstrap.Carousel("#myCarousel");
 
 const botao = document.querySelector(".btn-fixed");
 
@@ -9,6 +9,12 @@ window.addEventListener("scroll", function (event) {
     botao.classList.add("visible");
   }
 });
+
+
+
+
+
+
 
 function exibirReceita(numero) {
   document.getElementById("bloody-mary-input").style.color = "#ab9555";

@@ -64,16 +64,6 @@ body {
 h1 {
   margin: 0;
 }
-.btn-fixed {
-  position: fixed;
-  bottom: 30px;
-  right: 1%;
-  visibility: hidden;
-}
-
-.btn-fixed.visible {
-  visibility: visible;
-}
 header {
   display: flex;
   align-items: center;
@@ -114,6 +104,16 @@ footer {
   flex-direction: column;
 }
 
+.btn-fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 1%;
+  visibility: hidden;
+}
+
+.btn-fixed.visible {
+  visibility: visible;
+}
 .info-vinhos {
   display: flex;
   width: 40%;
