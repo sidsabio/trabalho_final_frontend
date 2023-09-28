@@ -20,18 +20,22 @@
 <body>
     <header>
         <h1 class="logo"><a id="a-logo" href="./index.html">Cork & Cap Co.</a></h1>
+        <div>
         <a href="./products.html">Produtos</a>
-        <a href="./subscribe.html">Assine</a>
+        <a class="destaque" href="./subscribe.html">Assine</a>
         <a href="./recipes.html">Faça O Seu Drink</a>
         <a href="./about.html">Sobre Nós</a>
+    </div>
     </header>
     <section class="assinatura">              
             <form class="row g-3">
                 <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    <label for="inputEmail4" class="form-label">Nome</label>
+                    <input type="text" class="form-control">
                 </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    <label for="inputEmail4" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6">
@@ -39,31 +43,31 @@
                     <input type="email" class="form-control" id="inputEmail4">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Password</label>
+                    <label for="inputPassword4" class="form-label">Senha</label>
                     <input type="password" class="form-control" id="inputPassword4">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
+                    <label for="inputAddress" class="form-label">Endereço</label>
                     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <label for="inputAddress2" class="form-label">Complemento</label>
                     <input type="text" class="form-control" id="inputAddress2"
                         placeholder="Apartment, studio, or floor">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
+                    <label for="inputCity" class="form-label">Cidade</label>
                     <input type="text" class="form-control" id="inputCity">
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label">State</label>
+                    <label for="inputState" class="form-label">Estado</label>
                     <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
+                        <option selected>escolha...</option>
                         <option>...</option>
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Zip</label>
+                    <label for="inputZip" class="form-label">CEP</label>
                     <input type="text" class="form-control" id="inputZip">
                 </div>
                 <div class="col-12">
@@ -75,7 +79,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
                 </div>
             </form>
     </section>

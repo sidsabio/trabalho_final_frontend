@@ -1,13 +1,82 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .slogan-description,
+  .slogan-title,
+  .description-drinks-index {
+    width: 90%;
+  }
+
+  .descricao-integrantes-left,
+  .descricao-integrantes-right {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 8%;
+  }
+
+  .descricao-integrantes-left img,
+  .descricao-integrantes-right img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .dados-integrante {
+    width: 100%;
+  }
+
+  .dados-integrante h2 {
+    font-size: 0.9em;
+  }
+
+  .dados-integrante p {
+    margin-bottom: 5px;
+    font-size: 0.7em;
+  }
+
+  .escolher-drink {
+    font-size: 0.6em;
+  }
+
+  header,
+  a {
+    font-size: 0.8em;
+  }
+}
+
 html,
 body {
   margin: 0;
   width: 100%;
   height: 100vh;
-  font-size: 1rem;
+  font-size: 1em;
   font-family: "Cinzel", serif;
 }
 h1 {
   margin: 0;
+}
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 14%;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  position: fixed;
+  z-index: 10;
+  font-size: 1em;
+}
+
+header div {
+  width: 78vw;
 }
 header a {
   margin-left: 4%;
@@ -40,29 +109,18 @@ footer{
 }
 .logo {
   font-family: "Cinzel", serif;
-  font-size: 2rem;
+  font-size: 2em;
+  width: 22vw;
   padding: 2%;
   border-right: 1px solid #ab9555;
 }
-header {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 16%;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  position: fixed;
-  z-index: 10;
-}
+
 .home {
   width: 100%;
   height: 100%;
-  margin-top: 0; 
- 
+  margin-top: 0;
 }
-.home > img{
+.home > img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -75,31 +133,30 @@ header {
   color: #fdf9ea;
   position: absolute;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;  
+  flex-direction: column;
   background: linear-gradient(0deg, rgb(0, 0, 0) 0, transparent);
 }
-.slogan-description{
-  width: 55%;
+.slogan-title {
+  width: 60vw;
   height: auto;
-  margin-top: 10%;
 }
-.slogan-title{
-  width: 55%;
+.slogan-description {
+  width: 60vw;
   height: auto;
-
+  margin-top: 4%;
 }
-.description-drinks-index{
+.description-drinks-index {
   width: 100%;
   height: auto;
 }
-.carousel-item img{
+.carousel-item img {
   width: 100%;
   height: 100%;
 }
 
-.harmonizacao img{
+.harmonizacao img {
   width: 100%;
   height: 100%;
 }
@@ -109,9 +166,8 @@ header {
   margin: 0;
 }
 
-
 /* Pagina sobre nós  */
-#principal{
+#principal {
   background-color: #080808;
 }
 
@@ -200,10 +256,8 @@ header {
   text-decoration: underline;
 }
 
-
-
 /* Pagina Produtos */
-.background-products{
+.background-products {
   width: 100%;
   height: auto;
   background-color: #080808;
@@ -211,9 +265,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;  
+  flex-direction: column;
 }
-.section-products{
+.section-products {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -222,34 +276,34 @@ header {
   margin-top: 5%;
   border-bottom: 1px solid #ab9555;
 }
-.section-products > h1{
+.section-products > h1 {
   margin-bottom: 5%;
 }
-.first-title{
+.first-title {
   margin-top: 4%;
 }
-.background-products img{
+.background-products img {
   width: 70%;
   height: 70%;
 }
-.col{
+.col {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.information-product{
+.information-product {
   margin-top: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.information-product button{
+.information-product button {
   width: 100px;
   height: 30px;
   background-color: #c1aa5a;
   border: none;
   border-radius: 5px;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 /* .section-products row:hover{
   transform: scale(1.1);
@@ -257,17 +311,15 @@ header {
 .section-products col:hover{
   transform: scale(1.1);
 } */
-.container{
+.container {
   margin-bottom: 6%;
 }
-
 
 /*  pagina faça seu drink */
 .section-faca-seu-drink {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
   align-items: center;
   align-content: center;
   background-color: black;
@@ -282,7 +334,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   align-content: flex-start;
-  width: 10%;
+  width: 22vw;
   height: 80%;
   margin-top: 8%;
   border-right: 1px solid #ab9555;
@@ -294,26 +346,33 @@ header {
   color: #ab9555;
   background-color: #080808e1;
   background: none;
+  font-size: 1em;
   border: none;
-
 }
 .escolher-drink input:hover {
- color: #fdf9ea;
- border-bottom: 1px solid #fdf9ea;
+  color: #fdf9ea;
+  border-bottom: 1px solid #fdf9ea;
 }
-#exibe-drink{
+
+#exibe-drink {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 6%;
+  /* margin-top: 6%; */
+  margin: auto;
   width: 62%;
   height: auto;
 }
 
+#exibe-drink h1,
+#exibe-drink p {
+  color: #fdf9ea;
+}
+
 /* Página Assinatura */
 
-.assinatura{
+.assinatura {
   width: 100%;
   height: 100%;
   background-color: #080808;
@@ -322,10 +381,13 @@ header {
   align-items: center;
   justify-content: center;
 }
-.assinatura form{
+.assinatura form {
   width: 70%;
   margin-top: 5%;
+}
 
+.logo {
+  font-size: 1.5rem;
 }
 
 
