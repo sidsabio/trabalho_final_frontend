@@ -100,6 +100,9 @@ header {
 
 
 /* Pagina sobre nós  */
+#principal{
+  background-color: #080808;
+}
 
 .section-sobre-nos {
   width: 100%;
@@ -111,10 +114,9 @@ header {
   padding-bottom: 5%;
   font-family: "Cinzel", serif;
 }
-
 .section-sobre-nos h1 {
-  margin-bottom: 50px;
-  margin-top: 240px;
+  margin-bottom: 5%;
+  margin-top: 10%;
   display: flex;
   justify-content: center;
 }
@@ -124,8 +126,9 @@ header {
   justify-content: end;
 }
 .descricao-integrantes-left {
-  width: 75%;
   height: 40%;
+  max-width: 80vw;
+  min-width: 50vw;
   background-color: #b9b094;
   background-size: 100%;
   border-radius: 0px 200px 200px 0px;
@@ -137,6 +140,8 @@ header {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .descricao-integrantes-right {
+  display: flex;
+  flex-direction: row;
   width: 75%;
   height: 40%;
   background-color: #fdf9ea;
@@ -145,19 +150,20 @@ header {
   padding: 2%;
   margin-bottom: 50px;
   color: black;
-  display: flex;
-  flex-direction: row;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .descricao-integrantes-left > img {
   width: 25%;
   height: 25%;
   border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .descricao-integrantes-right > img {
   width: 25%;
   height: 25%;
   border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .dados-integrante {
   width: 100%;
@@ -165,6 +171,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .dados-integrante img {
   width: 40px;
@@ -177,17 +184,12 @@ header {
   margin-top: 5%;
 }
 
-#principal > img {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 346vh;
-}
-
-#sobre-nos {
+.destaque {
   color: aliceblue;
   text-decoration: underline;
 }
+
+
 
 /* Pagina Produtos */
 .background-products{
@@ -236,14 +238,82 @@ header {
   background-color: #c1aa5a;
   border: none;
   border-radius: 5px;
+  transition: transform .3s;
 }
+/* .section-products row:hover{
+  transform: scale(1.1);
+}
+.section-products col:hover{
+  transform: scale(1.1);
+} */
 .container{
   margin-bottom: 6%;
 }
-.btn-close{
-  background: #ab9555;
-  opacity: 1;
+
+
+/*  pagina faça seu drink */
+.section-faca-seu-drink {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  background-color: black;
+  width: 100%;
+  height: 100%;
 }
 
+.escolher-drink {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+  width: 10%;
+  height: 80%;
+  margin-top: 8%;
+  border-right: 1px solid #ab9555;
+}
+.escolher-drink input {
+  margin: 0;
+  width: 99%;
+  height: 6%;
+  color: #ab9555;
+  background-color: #080808e1;
+  background: none;
+  border: none;
 
+}
+.escolher-drink input:hover {
+ color: #fdf9ea;
+ border-bottom: 1px solid #fdf9ea;
+}
+#exibe-drink{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6%;
+  width: 62%;
+  height: auto;
+}
+
+/* Página Assinatura */
+
+.assinatura{
+  width: 100%;
+  height: 100%;
+  background-color: #080808;
+  color: #fdf9ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.assinatura form{
+  width: 70%;
+  margin-top: 5%;
+
+}
 
