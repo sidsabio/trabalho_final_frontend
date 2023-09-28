@@ -47,9 +47,67 @@
   header,
   a {
     font-size: 0.8em;
+    flex-wrap: wrap;
   }
   .menu {
     font-size: 0.8em;
+  }
+
+  .background-products {
+    width: 100%;
+    height: auto;
+    background-color: #080808;
+    color: #fdf9ea;
+    display: flex;
+    font-size: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60%;
+    border-bottom: 1px solid #ab9555;
+  }
+
+  .background-products img {
+    width: 60%;
+    height: 60%;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .information-product {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .information-product h5 {
+    font-size: 80%;
+  }
+  .information-product button {
+    width: 100px;
+    height: 30px;
+    background-color: #c1aa5a;
+    color: #fdf9ea;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  .information-product button:hover {
+    background-color: #b9b094;
+    color: #080808;
+  }
+  .container {
+    margin-bottom: 6%;
   }
 }
 
@@ -67,7 +125,7 @@ h1 {
 header {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  
   width: 100vw;
   height: 14%;
   background-color: rgb(0, 0, 0);
@@ -293,11 +351,14 @@ footer {
   margin-top: 5%;
   border-bottom: 1px solid #ab9555;
 }
-.section-products > h1 {
+
+.section-products h1 {
   margin-bottom: 5%;
 }
+
 .first-title {
-  margin-top: 4%;
+  margin-top: 120px;
+  margin-bottom: 5%;
 }
 .background-products img {
   width: 70%;
@@ -318,9 +379,13 @@ footer {
   width: 100px;
   height: 30px;
   background-color: #c1aa5a;
+  color: #080808;
   border: none;
   border-radius: 5px;
   transition: transform 0.3s;
+}
+.information-product button:hover {
+  background-color: #fdf9ea;
 }
 .container {
   margin-bottom: 6%;
@@ -447,4 +512,70 @@ footer {
   display: flex;
   justify-content: space-around;
   margin-bottom: 10%;
+}
+
+/* TOGGLE teste */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fdf9ea;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #080808;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #c1aa5a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #c1aa5a ;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  
+}
+
+.slider.round:before {
+  border-radius: 50%;
+
+}
+.light-mode-botao{
+  width: 6%;
 }
