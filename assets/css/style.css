@@ -180,3 +180,22 @@ h1 {
   color: aliceblue;
   text-decoration: underline;
 }
+.section-assine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120vh; 
+  color:#c1aa5a;
+  background: rgb(35, 34, 34);
+}
+.section-assine form input[type="submit"], .section-assine form input[type="reset"] {
+  padding: 5px 10px;
+  background-color: #c1aa5a;
+  color: #080808; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 50px;
+}
