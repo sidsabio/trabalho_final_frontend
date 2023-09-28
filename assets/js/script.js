@@ -10,11 +10,10 @@ window.addEventListener("scroll", function (event) {
   }
 });
 
-
-
-
-
-
+function toggleTema() {
+  let toggleTema = document.getElementById("header");
+  toggleTema.classList.toggle("light-mode");
+}
 
 function exibirReceita(numero) {
   document.getElementById("bloody-mary-input").style.color = "#ab9555";
