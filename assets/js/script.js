@@ -1,13 +1,26 @@
 const carousel = new bootstrap.Carousel("#myCarousel");
 
-function exibirReceita(numero, idInput) {
-  document.getElementById(`${idInput}`).style.color = "";
+function exibirReceita(numero) {
+  document.getElementById("bloody-mary-input").style.color = "#ab9555";
+  document.getElementById("bloody-mary-input").style.borderBottom = "";
+  document.getElementById("basil-smash-input").style.color = "#ab9555";
+  document.getElementById("basil-smash-input").style.borderBottom = "";
+  document.getElementById("dry-martini-input").style.color = "#ab9555";
+  document.getElementById("dry-martini-input").style.borderBottom = "";
+  document.getElementById("jack-coke-input").style.color = "#ab9555";
+  document.getElementById("jack-coke-input").style.borderBottom = "";
+  document.getElementById("margarita-input").style.color = "#ab9555";
+  document.getElementById("margarita-input").style.borderBottom = "";
+  document.getElementById("negroni-input").style.color = "#ab9555";
+  document.getElementById("negroni-input").style.borderBottom = "";
+  document.getElementById("pina-colada-input").style.color = "#ab9555";
+  document.getElementById("pina-colada-input").style.borderBottom = "";
 
   const drinks = {
     1: { name: "Bloody Mary", image: "./assets/src/img/bloody-mary.png" },
     2: { name: "Basil Smash", image: "./assets/src/img/basil-smash.png" },
     3: { name: "Dry Martini", image: "./assets/src/img/dry-martini.png" },
-    4: { name: "Jack & Coke", image: "./assets/src/img/jack-coke.png" },
+    4: { name: "Jack Coke", image: "./assets/src/img/jack-coke.png" },
     5: { name: "Margarita", image: "./assets/src/img/margarita.png" },
     6: { name: "Negroni", image: "./assets/src/img/negroni.png" },
     7: { name: "Pina Colada", image: "./assets/src/img/pinacolada.png" },
@@ -20,5 +33,9 @@ function exibirReceita(numero, idInput) {
     document.getElementById(
       `${drink.name.toLowerCase().replace(" ", "-")}-input`
     ).style.color = "aliceblue";
+
+    document.getElementById(
+      `${drink.name.toLowerCase().replace(" ", "-")}-input`
+    ).style.borderBottom = "1px solid #fdf9ea";
   }
 }

@@ -48,6 +48,9 @@
   a {
     font-size: 0.8em;
   }
+  .menu{
+    font-size: 0.8em;
+  }
 }
 
 html,
@@ -305,12 +308,6 @@ footer{
   border-radius: 5px;
   transition: transform 0.3s;
 }
-/* .section-products row:hover{
-  transform: scale(1.1);
-}
-.section-products col:hover{
-  transform: scale(1.1);
-} */
 .container {
   margin-bottom: 6%;
 }
@@ -420,6 +417,7 @@ footer{
 .menu{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
