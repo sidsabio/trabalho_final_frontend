@@ -47,7 +47,7 @@
   header,
   a {
     font-size: 0.8em;
-    flex-wrap: wrap;
+    
   }
   .menu {
     font-size: 0.8em;
@@ -675,7 +675,7 @@ input:checked + .slider:before {
   color: #080808;
 }
 
-
+/* Light Mode */
 .header-light {
   text-decoration: underline;
   color: aliceblue;
